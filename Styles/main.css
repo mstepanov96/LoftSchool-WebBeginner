@@ -1,0 +1,78 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 652px;
+  height: 100vh;
+}
+.hero__main-content {
+  width: 400px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 915px;
+  height: 40px;
+  margin-top: 24px;
+}
+.header__item {
+  margin-right: 40px;
+}
+.header__item:last-child {
+  margin-right: 0px;
+}
+
+.product__title {
+  margin-bottom: 22px;
+}
+.product__description {
+  margin-bottom: 36px;
+}
+
+.features {
+  display: flex;
+  margin-bottom: 50px;
+}
+.features__item {
+  margin-right: 10px;
+}
+
+.menu__list {
+  display: flex;
+}
+.menu__item {
+  list-style-type: none;
+  margin-right: 27px;
+}
+.menu__item:last-child {
+  margin-right: 0;
+}
+.menu__item-link {
+  text-decoration: none;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.phone__icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+}
+
+.feature {
+  width: 156px;
+  height: 56px;
+  display: flex;
+}
+.feature__icon {
+  width: 41px;
+  height: 41px;
+  margin-right: 11px;
+}

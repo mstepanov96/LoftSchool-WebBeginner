@@ -1,0 +1,50 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    min-height: 652px;
+    height: 100vh;
+
+    &__main-content {
+        width: 400px;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 915px;
+    height: 40px;
+
+    margin-top: 24px;
+
+    &__item {
+        margin-right: 40px;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+}
+
+.product {
+    &__title {
+        margin-bottom: 22px;
+    }
+
+    &__description {
+        margin-bottom: 36px;
+    }
+}
+
+.features {
+    display: flex;
+    margin-bottom: 50px;
+
+    &__item {
+        margin-right: 10px;
+    }
+}
