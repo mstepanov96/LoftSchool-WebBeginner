@@ -1,0 +1,10 @@
+.feature {
+  width: 156px;
+  height: 56px;
+  display: flex;
+}
+.feature__icon {
+  width: 41px;
+  height: 41px;
+  margin-right: 11px;
+}
