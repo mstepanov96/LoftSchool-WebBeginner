@@ -34,6 +34,54 @@
   background-color: #ca1b36;
 }
 
+.selectable {
+  display: flex;
+}
+.selectable__input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.selectable__input:checked + .selectable__label > .selectable__pseudo--checkbox::after {
+  content: "";
+  background: no-repeat center url("/Images/galka.png");
+  width: 10px;
+  height: 8px;
+}
+.selectable__input:checked + .selectable__label > .selectable__pseudo--radio::after {
+  content: "";
+  background-color: #e01f3d;
+  width: 13px;
+  height: 13px;
+  border-radius: 100%;
+}
+.selectable__label {
+  color: white;
+  display: flex;
+}
+.selectable__pseudo--checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "";
+  background-color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 4px;
+  margin-right: 11px;
+}
+.selectable__pseudo--radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "";
+  background-color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  margin-right: 11px;
+}
+
 .hero {
   justify-content: space-between;
   padding: 24px 80px 50px 80px;
@@ -341,10 +389,10 @@
   display: flex;
   margin-bottom: 19px;
 }
-.order__payment-type .customer-field {
+.order__payment-type .selectable {
   margin-right: 16px;
 }
-.order__payment-type .customer-field:last-child {
+.order__payment-type .selectable:last-child {
   margin-right: 0px;
 }
 .order__additional {
@@ -392,12 +440,4 @@
 }
 .customer-field__input:focus {
   border: 3px solid #e01f3d;
-}
-.customer-field__input--selectable {
-  width: 25px;
-  height: 25px;
-  margin-right: 10px;
-}
-.customer-field--row-reverse {
-  flex-direction: row-reverse;
 }

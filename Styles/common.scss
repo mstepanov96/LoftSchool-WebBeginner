@@ -40,3 +40,67 @@
         background-color: $bigBtnColorHover;
     }
 }
+
+.selectable {
+    display: flex;
+
+    &__input {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+
+        &:checked + .selectable__label > .selectable__pseudo {
+
+            &--checkbox::after {
+                content: "";
+
+                // background-color: $colorRed;
+                background: no-repeat center url("/Images/galka.png");
+                width: 10px;
+                height: 8px;
+    
+                // border-radius: 100%;
+            }
+
+            &--radio::after {
+                content: "";
+
+                background-color: $colorRed;
+                width: 13px;
+                height: 13px;
+    
+                border-radius: 100%;
+            }
+        }
+    }
+
+    &__label {
+        color: white;
+        display: flex;
+    }
+
+    &__pseudo {
+        @mixin backgroundCommon($borderRadius) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            content: "";
+
+            background-color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: $borderRadius;
+
+            margin-right: 11px;
+        }
+
+        &--checkbox {
+            @include backgroundCommon(4px);
+        }
+
+        &--radio {
+            @include backgroundCommon(100%);
+        }
+    }
+}

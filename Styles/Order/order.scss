@@ -67,7 +67,7 @@
         display: flex;
         margin-bottom: 19px;
 
-        .customer-field {
+        .selectable {
             margin-right: 16px;
 
             &:last-child {
@@ -132,16 +132,5 @@
         &:focus {
             border: 3px solid $colorRed;
         }
-
-        &--selectable {
-            width: 25px;
-            height: 25px;
-
-            margin-right: 10px;
-        }
-    }
-
-    &--row-reverse {
-        flex-direction: row-reverse;
     }
 }

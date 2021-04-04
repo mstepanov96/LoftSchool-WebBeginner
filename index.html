@@ -85,8 +85,7 @@
                     </div>
                     <div class="reason__title">Быстрая зарядка</div>
                     <div class="reason__description">Благодаря технологии Fast Fuel всего через 5 минут зарядки вы
-                        сможете
-                        слушать музыку ещё 3 часа.</div>
+                        сможете слушать музыку ещё 3 часа.</div>
                 </li>
             </ul>
         </section>
@@ -155,24 +154,34 @@
                 <div class="order__summary columns__item">
                     <div class="customer-field order__comment">
                         <label for="customer-comment" class="customer-field__label">Комментарий</label>
-                        <textarea name="xxx" id="customer-comment" cols="30" rows="10" class = "customer-field__input"></textarea>
+                        <textarea name="xxx" id="customer-comment" cols="30" rows="10"
+                            class="customer-field__input"></textarea>
                     </div>
                     <div class="order__payment-type">
-                        <div class="customer-field customer-field--row-reverse customer">
-                            <label for="customer-payment-cash" class="customer-field__label">Потребуется сдача</label>
+                        <div class="selectable">
                             <input type="radio" id="customer-payment-cash" name="payment-type"
-                                class="customer-field__input customer-field__input--selectable">
+                                class="selectable__input selectable__input">
+                            <label for="customer-payment-cash" class="selectable__label">
+                                <div class="selectable__pseudo--radio"></div>
+                                Потребуется сдача
+                            </label>
                         </div>
-                        <div class="customer-field customer-field--row-reverse">
-                            <label for="customer-payment-card" class="customer-field__label">Оплата картой</label>
+                        <div class="selectable">
                             <input type="radio" id="customer-payment-card" name="payment-type"
-                                class="customer-field__input customer-field__input--selectable">
+                                class="selectable__input selectable__input">
+                            <label for="customer-payment-card" class="selectable__label">
+                                <div class="selectable__pseudo--radio"></div>
+                                Оплата картой
+                            </label>
                         </div>
                     </div>
                     <div class="order__additional">
-                        <div class="customer-field customer-field--row-reverse">
-                            <label for="dont-call-back" class="customer-field__label">Не перезванивать</label>
-                            <input type="checkbox" id="dont-call-back" class="customer-field__input customer-field__input--selectable">
+                        <div class="selectable">
+                            <input type="checkbox" id="dont-call-back" class="selectable__input">
+                            <label for="dont-call-back" class="selectable__label">
+                                <div class="selectable__pseudo selectable__pseudo--checkbox"></div>
+                                Не перезванивать
+                            </label>
                         </div>
                     </div>
                     <div class="order__buttons">
