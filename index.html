@@ -11,45 +11,173 @@
 
 <body>
     <div class="wrapper">
-        <section class="hero">
-            <div class="hero__container">
-                <header class="header">
-                    <img src="./Images/logo.png" alt="logo image" class="logo header__item">
-                    <nav class="menu header__item">
-                        <ul class="menu__list">
-                            <li class="menu__item"><a href="#" class="menu__item-link">О нас</a></li>
-                            <li class="menu__item"><a href="#" class="menu__item-link">Наушники</a></li>
-                            <li class="menu__item"><a href="#" class="menu__item-link">Команда</a></li>
-                            <li class="menu__item"><a href="#" class="menu__item-link">Цвета</a></li>
-                            <li class="menu__item"><a href="#" class="menu__item-link">Отзывы</a></li>
-                            <li class="menu__item"><a href="#" class="menu__item-link">Как мы работаем</a></li>
-                            <li class="menu__item"><a href="#" class="menu__item-link">Контакты</a></li>
-                        </ul>
-                    </nav>
-                    <address class="address header__item">
-                        <a href="tel:+78009039090" class="phone">
-                            <img src="./Images/icon-phone.png" alt="phone icon" class="phone__icon">
-                            <span class="phone__number">8 800 903 90 90</span>
-                        </a>
-                    </address>
-                </header>
-                <div class="hero__main-content product">
-                    <h1 class="product__title">Беспроводные наушники Beats Solo 3</h1>
-                    <div class="product__description">Встречайте новую версию наушников из линейки Powebeats.</div>
-                    <a href="#" class="big-btn">Заказать</a>
+        <section class="hero page-section">
+            <!-- <div class="hero__container"> -->
+            <header class="header">
+                <img src="./Images/logo.png" alt="logo image" class="logo header__item">
+                <nav class="menu header__item">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#" class="menu__item-link">О нас</a></li>
+                        <li class="menu__item"><a href="#" class="menu__item-link">Наушники</a></li>
+                        <li class="menu__item"><a href="#" class="menu__item-link">Команда</a></li>
+                        <li class="menu__item"><a href="#" class="menu__item-link">Цвета</a></li>
+                        <li class="menu__item"><a href="#" class="menu__item-link">Отзывы</a></li>
+                        <li class="menu__item"><a href="#" class="menu__item-link">Как мы работаем</a></li>
+                        <li class="menu__item"><a href="#" class="menu__item-link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <address class="address header__item">
+                    <a href="tel:+78009039090" class="phone">
+                        <img src="./Images/icon-phone.png" alt="phone icon" class="phone__icon">
+                        <span class="phone__number">8 800 903 90 90</span>
+                    </a>
+                </address>
+            </header>
+            <div class="hero__main-content product">
+                <h1 class="product__title">Беспроводные наушники Beats Solo 3</h1>
+                <div class="product__description">Встречайте новую версию наушников из линейки Powebeats.</div>
+                <a href="#" class="product__btn-order big-btn">Заказать</a>
+            </div>
+            <ul class="features">
+                <li class="features__item feature">
+                    <img src="./Images/icon-feature-sound.png" alt="feature icon" class="feature__icon">
+                    <span class="feature__summary">Безупречный звук</span>
+                </li>
+                <li class="features__item feature">
+                    <img src="./Images/icon-feature-battery_life.png" alt="feature icon" class="feature__icon">
+                    <span class="feature__summary">До 40 часов работы</span>
+                </li>
+                <li class="features__item feature">
+                    <img src="./Images/icon-feature-fast_fuel.png" alt="feature icon" class="feature__icon">
+                    <span class="feature__summary">Технология Fast Fuel</span>
+                </li>
+            </ul>
+            <!-- </div> -->
+        </section>
+        <section class="why page-section">
+            <div class="why__head-content">
+                <h1 class="why__the-question">Почему Beats Solo 3?</h1>
+                <div class="why__main-reason">Процессор W1 работает невероятно эффективно и позволяет легко
+                    подключать наушники к различным устройствам Apple.</div>
+            </div>
+            <ul class="reasons">
+                <li class="reasons__item reason">
+                    <div class="reason__icon-container">
+                        <img src="Images/icon-reason-battery_life.png" alt="reason icon" class="reason__icon">
+                    </div>
+                    <div class="reason__title">40 часов работы</div>
+                    <div class="reason__description">Наушники Beats Solo3 могут работать до 40 часов без подзарядки,
+                        чтобы вы
+                        могли пользоваться ими каждый день.</div>
+                </li>
+                <li class="reasons__item reason">
+                    <div class="reason__icon-container">
+                        <img src="Images/icon-reason-sound.png" alt="reason icon" class="reason__icon">
+                    </div>
+                    <div class="reason__title">Фирменное звучание</div>
+                    <div class="reason__description">Фирменное звучание Beats в наушниках с технологией Bluetooth класса
+                        1 будет
+                        сопровождать вас повсюду — куда бы вы ни отправились.</div>
+                </li>
+                <li class="reasons__item reason">
+                    <div class="reason__icon-container">
+                        <img src="Images/icon-reason-fast_fuel.png" alt="reason icon" class="reason__icon">
+                    </div>
+                    <div class="reason__title">Быстрая зарядка</div>
+                    <div class="reason__description">Благодаря технологии Fast Fuel всего через 5 минут зарядки вы
+                        сможете
+                        слушать музыку ещё 3 часа.</div>
+                </li>
+            </ul>
+        </section>
+        <section class="reviews page-section">
+            <h1 class="reviews__head-content">Отзывы</h1>
+            <div class="review">
+                <img src="Images/Reviews/Author_0.png" alt="reviewer avatar" class="review__avatar">
+                <div class="review__content">
+                    <div class="review__title">Отличный звук</div>
+                    <div class="review__text">Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В
+                        течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе
+                        позволить. А батончик – он всегда под рукой. Это приятно и удобно.</div>
+                    <div class="review__reviewer">Билли Айлиш</div>
                 </div>
-                <div class="features">
-                    <div class="features__item feature">
-                        <img src="./Images/icon-feature-sound.png" alt="feature icon" class="feature__icon">
-                        <span class="feature__summary">Безупречный звук</span>
+                <div class="review__decorative-half-circle"></div>
+            </div>
+            <ul class="reviews__reviewers-list reviewers">
+                <li class="reviewers__item reviewers__item--selected">
+                    <img src="Images/Reviews/Author_0.png" alt="reviewer avatar" class="reviewers__picture">
+                </li>
+                <li class="reviewers__item">
+                    <img src="Images/Reviews/Author_1.png" alt="reviewer avatar" class="reviewers__picture">
+                </li>
+                <li class="reviewers__item">
+                    <img src="Images/Reviews/Author_2.png" alt="reviewer avatar" class="reviewers__picture">
+                </li>
+            </ul>
+        </section>
+        <section class="order page-section">
+            <h1 class="order__head-content">Закажите доставку</h1>
+            <div class="order__main-content columns">
+                <div class="order__customer columns__item">
+                    <div class="order__identity">
+                        <div class="customer-field">
+                            <label for="customer-name" class="customer-field__label">Комментарий</label>
+                            <input type="text" id="customer-name" class="customer-field__input">
+                        </div>
+                        <div class="customer-field">
+                            <label for="customer-phone" class="customer-field__label">Телефон</label>
+                            <input type="tel" id="customer-phone" class="customer-field__input">
+                        </div>
                     </div>
-                    <div class="features__item feature">
-                        <img src="./Images/icon-feature-battery_life.png" alt="feature icon" class="feature__icon">
-                        <span class="feature__summary">До 40 часов работы</span>
+                    <div class="customer-field order__street">
+                        <label for="customer-street" class="customer-field__label">Улица</label>
+                        <input type="text" id="customer-street" class="customer-field__input">
                     </div>
-                    <div class="features__item feature">
-                        <img src="./Images/icon-feature-fast_fuel.png" alt="feature icon" class="feature__icon">
-                        <span class="feature__summary">Технология Fast Fuel</span>
+                    <div class="order__placement">
+                        <div class="customer-field">
+                            <label for="customer-hse" class="customer-field__label">Дом</label>
+                            <input type="text" id="customer-hse" class="customer-field__input">
+                        </div>
+                        <div class="customer-field">
+                            <label for="customer-bld" class="customer-field__label">Корпус</label>
+                            <input type="text" id="customer-bld" class="customer-field__input">
+                        </div>
+                        <div class="customer-field">
+                            <label for="customer-apartment" class="customer-field__label">Квартира</label>
+                            <input type="text" id="customer-apartments" class="customer-field__input">
+                        </div>
+                        <div class="customer-field">
+                            <label for="customer-floor" class="customer-field__label">Этаж</label>
+                            <input type="text" id="customer-floor" class="customer-field__input">
+                        </div>
+                    </div>
+                </div>
+                <div class="order__summary columns__item">
+                    <div class="customer-field order__comment">
+                        <label for="customer-comment" class="customer-field__label">Комментарий</label>
+                        <textarea name="xxx" id="customer-comment" cols="30" rows="10" class = "customer-field__input"></textarea>
+                    </div>
+                    <div class="order__payment-type">
+                        <div class="customer-field customer-field--row-reverse customer">
+                            <label for="customer-payment-cash" class="customer-field__label">Потребуется сдача</label>
+                            <input type="radio" id="customer-payment-cash" name="payment-type"
+                                class="customer-field__input customer-field__input--selectable">
+                        </div>
+                        <div class="customer-field customer-field--row-reverse">
+                            <label for="customer-payment-card" class="customer-field__label">Оплата картой</label>
+                            <input type="radio" id="customer-payment-card" name="payment-type"
+                                class="customer-field__input customer-field__input--selectable">
+                        </div>
+                    </div>
+                    <div class="order__additional">
+                        <div class="customer-field customer-field--row-reverse">
+                            <label for="dont-call-back" class="customer-field__label">Не перезванивать</label>
+                            <input type="checkbox" id="dont-call-back" class="customer-field__input customer-field__input--selectable">
+                        </div>
+                    </div>
+                    <div class="order__buttons">
+                        <div class="order__button-order big-btn">Заказать</div>
+                        <div class="order__button-cancel">Очистить</div>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,147 @@
+.order {
+    background-color: #222222;
+
+    &__head-content {
+        text-align: center;
+        margin-bottom: 58px;
+
+        font-size: 48px;
+        line-height: 52px;
+
+        text-transform: uppercase;
+        color: white;
+    }
+
+    &__customer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__identity {
+        display: flex;
+        margin-bottom: 11px;
+
+        .customer-field {
+            width: 222px;
+            margin-right: 16px;
+
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+    }
+
+    &__street.customer-field {
+        width: 460px;
+        margin-bottom: 11px;
+    }
+
+    &__placement {
+        display: flex;
+
+        .customer-field {
+            width: 106px;
+            margin-right: 12px;
+
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+    }
+
+    &__summary {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__comment.customer-field {
+        width: 450px;
+        margin-bottom: 38px;
+        
+        .customer-field__input {
+            height: 152px;
+        }
+    }
+
+    &__payment-type {
+        display: flex;
+        margin-bottom: 19px;
+
+        .customer-field {
+            margin-right: 16px;
+
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+    }
+
+    &__additional {
+        display: flex;
+        margin-bottom: 46px;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+
+        .big-btn {
+            margin-right: 15px;
+        }
+    }
+
+    &__button-cancel {
+        color: white;
+    }
+}
+
+.columns {
+    display: flex;
+    justify-content: center;
+
+    &__item {
+        margin-right: 27px;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+}
+
+.customer-field {
+    display: flex;
+    flex-direction: column;
+
+    &__label {
+        color: white;
+    }
+
+    &__input {
+        height: 58px;
+        outline: none;
+
+        font-size: 14px;
+        line-height: 20px;
+
+        padding-left: 12px;
+        
+        box-sizing: border-box;
+        border-radius: 4px;
+        border-style: hidden;
+
+        &:focus {
+            border: 3px solid $colorRed;
+        }
+
+        &--selectable {
+            width: 25px;
+            height: 25px;
+
+            margin-right: 10px;
+        }
+    }
+
+    &--row-reverse {
+        flex-direction: row-reverse;
+    }
+}

@@ -1,0 +1,39 @@
+.reviewers {
+    display: flex;
+    list-style-type: none;
+    padding-inline-start: 0px;
+
+    $pictureSize: 74px;
+
+    &__picture {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        width: $pictureSize;
+        height: $pictureSize;
+    }
+
+    &__item {
+        width: $pictureSize;
+        height: $pictureSize;
+
+        margin-right: 6px;
+
+        border-radius: 100px;
+        overflow: hidden;
+        position: relative;
+
+        border: 0px solid $colorRed;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+
+        &--selected {
+            border-width: 5px;
+            box-sizing: border-box;
+        }
+    }
+}
