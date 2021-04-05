@@ -85,6 +85,7 @@
 .hero {
   justify-content: space-between;
   padding: 24px 80px 50px 80px;
+  background: url(/Images/beats_solo_3.png) left 78% center no-repeat;
   background-color: #f5f5f5;
 }
 
@@ -252,6 +253,7 @@
 
 .reviews {
   align-items: center;
+  justify-content: space-evenly;
 }
 .reviews__head-content {
   font-weight: bold;
@@ -335,6 +337,7 @@
 }
 
 .order {
+  justify-content: space-evenly;
   background-color: #222222;
 }
 .order__head-content {
