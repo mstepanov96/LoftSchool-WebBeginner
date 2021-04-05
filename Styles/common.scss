@@ -54,12 +54,9 @@
             &--checkbox::after {
                 content: "";
 
-                // background-color: $colorRed;
-                background: no-repeat center url("/Images/galka.png");
+                background: no-repeat center url("./../Images/galka.png");
                 width: 10px;
                 height: 8px;
-    
-                // border-radius: 100%;
             }
 
             &--radio::after {

@@ -42,11 +42,10 @@
 
         &::before {
             position: absolute;
-            content: url(/Images/combined_shape.png);
+            content: url("./../Images/combined_shape.png");
 
             top: 50px;
             right: -30px;
-            // transform: translate(-50%);
         }
 
         &:last-child {
