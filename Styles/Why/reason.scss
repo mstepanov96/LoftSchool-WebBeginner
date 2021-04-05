@@ -3,12 +3,6 @@
     flex-direction: column;
     align-items: center;
 
-    margin-right: 55px;
-
-    &:last-child {
-        margin-right: 0;
-    }
-
     &__icon-container {
         display: flex;
         justify-content: center;

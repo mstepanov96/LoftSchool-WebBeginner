@@ -36,5 +36,23 @@
 
     &__item {
         list-style-type: none;
+        position: relative;
+
+        padding: 0 30px 0 30px;
+
+        &::before {
+            position: absolute;
+            content: url(/Images/combined_shape.png);
+
+            top: 50px;
+            right: -30px;
+            // transform: translate(-50%);
+        }
+
+        &:last-child {
+            &::before {
+                display: none;
+            }
+        }
     }
 }
