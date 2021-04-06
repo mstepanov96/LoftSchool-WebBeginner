@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 915px;
+    height: 40px;
+
+    &__item {
+        margin-right: 50px;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+}

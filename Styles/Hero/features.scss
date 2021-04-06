@@ -1,0 +1,11 @@
+.features {
+    display: flex;
+
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+
+    &__item {
+        margin-right: 10px;
+    }
+}
