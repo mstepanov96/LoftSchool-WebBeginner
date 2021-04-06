@@ -8,7 +8,7 @@
     
     &__item {
         list-style-type: none;
-        margin-right: 27px;
+        margin-right: 1.7rem;
     
         &:last-child {
             margin-right: 0;
@@ -18,7 +18,7 @@
     &__item-link {
         font-family: $fontAlegreyaSans;
         font-size: 18px;
-        line-height: 20px;
+        line-height: 1.11em;
         color: $colorBlack;
 
         text-decoration: none;

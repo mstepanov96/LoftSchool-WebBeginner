@@ -1,15 +1,19 @@
+html {
+    font-size: 16px;
+}
+
 body {
     font-family: $fontPlay;
 }
 
 section {
     height: 100vh;
-    min-height: 652px;
+    min-height: 40.75rem;
 }
 
 .wrapper {
     overflow: hidden;
-    min-width: 1100px;
+    min-width: 68.75rem;
 }
 
 .page-section {
@@ -29,14 +33,13 @@ section {
     text-transform: uppercase;
 
     font-weight: bold;
-    font-size: 16px;
-    line-height: 18px;
+    line-height: 1.125em;
 
     color: white;
 
-    border-radius: 100px;
-    width: 163px;
-    height: 54px;
+    border-radius: 6.25rem;
+    width: 10.2rem;
+    height: 3.4rem;
 
     background-color: $bigBtnColor;
 
@@ -59,16 +62,16 @@ section {
                 content: "";
 
                 background: no-repeat center url("./../Images/galka.png");
-                width: 10px;
-                height: 8px;
+                width: 0.63rem;
+                height: 0.5rem;
             }
 
             &--radio::after {
                 content: "";
 
                 background-color: $colorRed;
-                width: 13px;
-                height: 13px;
+                width: 0.81rem;
+                height: 0.81rem;
     
                 border-radius: 100%;
             }
@@ -89,15 +92,15 @@ section {
             content: "";
 
             background-color: white;
-            width: 25px;
-            height: 25px;
+            width: 1.56rem;
+            height: 1.56rem;
             border-radius: $borderRadius;
 
-            margin-right: 11px;
+            margin-right: 0.7rem;
         }
 
         &--checkbox {
-            @include backgroundCommon(4px);
+            @include backgroundCommon(0.25rem);
         }
 
         &--radio {
