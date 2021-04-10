@@ -12,6 +12,10 @@ $bigBtnColorHover : #ca1b36;
 $fontPlay: 'Play', sans-serif;
 $fontAlegreyaSans: 'Alegreya Sans', sans-serif;
 
+@function rem($px) {
+    @return $px / 16px + 0rem;
+}
+
 @import "common.scss";
 
 @import "Hero/hero.scss";

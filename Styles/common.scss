@@ -9,19 +9,19 @@ body {
 section {
     height: 100vh;
     min-height: 40.75rem;
-}
 
-.wrapper {
-    overflow: hidden;
-    min-width: 68.75rem;
-}
-
-.page-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 
     box-sizing: border-box;
+
+    @media (max-width: 768px) {
+        min-height: rem(1000px);
+    }
+
+    @media (max-width: 480px) {
+        min-height: rem(800px);
+    }
 }
 
 .big-btn {

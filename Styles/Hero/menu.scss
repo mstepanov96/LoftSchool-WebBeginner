@@ -1,14 +1,19 @@
 .menu {
     &__list {
+        flex-wrap: wrap;
+        justify-content: center;
+
         display: flex;
-        padding-inline-start: 0;
+
         margin-block-start: 0;
         margin-block-end: 0;
+        padding-inline-start: 0;
     }
     
     &__item {
-        list-style-type: none;
         margin-right: 1.7rem;
+
+        list-style-type: none;
     
         &:last-child {
             margin-right: 0;
@@ -16,9 +21,9 @@
     }
     
     &__item-link {
-        font-family: $fontAlegreyaSans;
         font-size: 18px;
         line-height: 1.11em;
+        font-family: $fontAlegreyaSans;
         color: $colorBlack;
 
         text-decoration: none;
