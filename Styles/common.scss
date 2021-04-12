@@ -15,6 +15,13 @@ section {
 
     box-sizing: border-box;
 
+    &.reviews {
+        display: none;
+    }
+    &.order {
+        display: none;
+    }
+
     @media (max-width: 768px) {
         min-height: rem(1000px);
     }
