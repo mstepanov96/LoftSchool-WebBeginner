@@ -151,8 +151,14 @@
         }
     }
 
-    &__button-cancel {
+    &__button {
+        border: none;
+        outline: none;
+    }
+
+    &__button--cancel {
         color: white;
+        background: none;
 
         @media (max-width: 480px) {
             color: $colorRed

@@ -123,84 +123,86 @@
         </section>
         <section class="order">
             <h1 class="order__head-content">Закажите доставку</h1>
-            <div class="order__main-content columns">
-                <div class="order__customer columns__item">
-                    <div class="order__identity">
-                        <div class="customer-field">
-                            <label for="customer-name" class="customer-field__label">Имя</label>
-                            <input type="text" id="customer-name" class="customer-field__input">
+            <form action="#">
+                <div class="order__main-content columns">
+                    <div class="order__customer columns__item">
+                        <div class="order__identity">
+                            <div class="customer-field">
+                                <label for="customer-name" class="customer-field__label">Имя</label>
+                                <input type="text" id="customer-name" class="customer-field__input">
+                            </div>
+                            <div class="customer-field">
+                                <label for="customer-phone" class="customer-field__label">Телефон</label>
+                                <input type="tel" id="customer-phone" class="customer-field__input">
+                            </div>
                         </div>
-                        <div class="customer-field">
-                            <label for="customer-phone" class="customer-field__label">Телефон</label>
-                            <input type="tel" id="customer-phone" class="customer-field__input">
+                        <div class="customer-field order__street">
+                            <label for="customer-street" class="customer-field__label">Улица</label>
+                            <input type="text" id="customer-street" class="customer-field__input">
                         </div>
-                    </div>
-                    <div class="customer-field order__street">
-                        <label for="customer-street" class="customer-field__label">Улица</label>
-                        <input type="text" id="customer-street" class="customer-field__input">
-                    </div>
-                    <div class="order__placement">
-                        <div class="customer-field">
-                            <label for="customer-hse" class="customer-field__label">Дом</label>
-                            <input type="text" id="customer-hse" class="customer-field__input">
-                        </div>
-                        <div class="customer-field">
-                            <label for="customer-bld" class="customer-field__label">Корпус</label>
-                            <input type="text" id="customer-bld" class="customer-field__input">
-                        </div>
-                        <div class="customer-field">
-                            <label for="customer-apartment" class="customer-field__label">Квартира</label>
-                            <input type="text" id="customer-apartments" class="customer-field__input">
-                        </div>
-                        <div class="customer-field">
-                            <label for="customer-floor" class="customer-field__label">Этаж</label>
-                            <input type="text" id="customer-floor" class="customer-field__input">
-                        </div>
-                    </div>
-                </div>
-                <div class="order__summary columns__item">
-                    <div class="customer-field order__comment">
-                        <label for="customer-comment" class="customer-field__label">Комментарий</label>
-                        <textarea name="xxx" id="customer-comment" cols="30" rows="10"
-                            class="customer-field__input"></textarea>
-                    </div>
-                    <div class="order__payment-type">
-                        <div class="selectable">
-                            <input type="radio" id="customer-payment-cash" name="payment-type"
-                                class="selectable__input">
-                            <label for="customer-payment-cash" class="selectable__label">
-                                <div class="selectable__pseudo--radio"></div>
-                                <span class="selectable__title">Потребуется сдача</span>
-                            </label>
-                        </div>
-                        <div class="selectable">
-                            <input type="radio" id="customer-payment-card" name="payment-type"
-                                class="selectable__input">
-                            <label for="customer-payment-card" class="selectable__label">
-                                <div class="selectable__pseudo--radio"></div>
-                                <span class="selectable__title">Оплата по карте</span>
-                            </label>
+                        <div class="order__placement">
+                            <div class="customer-field">
+                                <label for="customer-hse" class="customer-field__label">Дом</label>
+                                <input type="text" id="customer-hse" class="customer-field__input">
+                            </div>
+                            <div class="customer-field">
+                                <label for="customer-bld" class="customer-field__label">Корпус</label>
+                                <input type="text" id="customer-bld" class="customer-field__input">
+                            </div>
+                            <div class="customer-field">
+                                <label for="customer-apartment" class="customer-field__label">Квартира</label>
+                                <input type="text" id="customer-apartments" class="customer-field__input">
+                            </div>
+                            <div class="customer-field">
+                                <label for="customer-floor" class="customer-field__label">Этаж</label>
+                                <input type="text" id="customer-floor" class="customer-field__input">
+                            </div>
                         </div>
                     </div>
-                    <div class="order__additional">
-                        <div class="selectable">
-                            <input type="checkbox" id="dont-call-back" class="selectable__input">
-                            <label for="dont-call-back" class="selectable__label">
-                                <div class="selectable__pseudo selectable__pseudo--checkbox">
-                                    <svg class="selectable__check">
-                                        <use xlink:href="./Images/SVG/icon-checkmark.svg#icon"></use>
-                                    </svg>
-                                </div>
-                                <span class="selectable__title">Не перезванивать</span>
-                            </label>
+                    <div class="order__summary columns__item">
+                        <div class="customer-field order__comment">
+                            <label for="customer-comment" class="customer-field__label">Комментарий</label>
+                            <textarea name="xxx" id="customer-comment" cols="30" rows="10"
+                                class="customer-field__input"></textarea>
+                        </div>
+                        <div class="order__payment-type">
+                            <div class="selectable">
+                                <input type="radio" id="customer-payment-cash" name="payment-type"
+                                    class="selectable__input">
+                                <label for="customer-payment-cash" class="selectable__label">
+                                    <div class="selectable__pseudo--radio"></div>
+                                    <span class="selectable__title">Потребуется сдача</span>
+                                </label>
+                            </div>
+                            <div class="selectable">
+                                <input type="radio" id="customer-payment-card" name="payment-type"
+                                    class="selectable__input">
+                                <label for="customer-payment-card" class="selectable__label">
+                                    <div class="selectable__pseudo--radio"></div>
+                                    <span class="selectable__title">Оплата по карте</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="order__additional">
+                            <div class="selectable">
+                                <input type="checkbox" id="dont-call-back" class="selectable__input">
+                                <label for="dont-call-back" class="selectable__label">
+                                    <div class="selectable__pseudo selectable__pseudo--checkbox">
+                                        <svg class="selectable__check">
+                                            <use xlink:href="./Images/SVG/icon-checkmark.svg#icon"></use>
+                                        </svg>
+                                    </div>
+                                    <span class="selectable__title">Не перезванивать</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="order__buttons">
+                            <input type="submit" value="Заказать" class="order__button big-btn">
+                            <input type="reset" value="Очистить" class="order__button order__button--cancel">
                         </div>
                     </div>
-                    <div class="order__buttons">
-                        <div class="order__button-order big-btn">Заказать</div>
-                        <div class="order__button-cancel">Очистить</div>
-                    </div>
-                </div>
-            </div>
+                </div>    
+            </form>
         </section>
     </div>
 </body>

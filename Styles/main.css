@@ -707,11 +707,16 @@ section {
     justify-content: center;
   }
 }
-.order__button-cancel {
+.order__button {
+  border: none;
+  outline: none;
+}
+.order__button--cancel {
   color: white;
+  background: none;
 }
 @media (max-width: 480px) {
-  .order__button-cancel {
+  .order__button--cancel {
     color: #e01f3d;
   }
 }
