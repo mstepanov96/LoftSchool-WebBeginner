@@ -58,12 +58,8 @@ section {
 
         &:checked + .selectable__label > .selectable__pseudo {
 
-            &--checkbox::after {
-                content: "";
-
-                background: no-repeat center url("./../Images/galka.png");
-                width: 0.63rem;
-                height: 0.5rem;
+            &--checkbox > .selectable__check {
+                display: initial;
             }
 
             &--radio::after {
@@ -100,6 +96,8 @@ section {
             height: 1.56rem;
             border-radius: $borderRadius;
 
+            flex-shrink: 0;
+
             margin-right: 0.7rem;
         }
 
@@ -110,5 +108,14 @@ section {
         &--radio {
             @include backgroundCommon(100%);
         }
+    }
+
+    &__check {
+        display: none;
+
+        fill: $colorRed;
+
+        width: 75%;
+        height: 75%;
     }
 }
