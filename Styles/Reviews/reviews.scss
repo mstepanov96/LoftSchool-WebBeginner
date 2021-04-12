@@ -1,33 +1,39 @@
 .reviews {
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 
     &__head-content {
         font-weight: bold;
         font-size: 48px;
-        line-height: 52px;
+        line-height: 1.1em;
 
         text-transform: uppercase;
 
         z-index: 10;
         margin-bottom: 32px;
+
+        @media (max-width: 480px) {
+            font-size: 32px;
+            margin-bottom: rem(26px);
+        }
     }
 }
 
 .review {
-    $spacing: 42px;
+    $spacing: rem(42px);
 
     display: flex;
     position: relative;
 
-    width: 940px;
-    height: 348px;
+    width: 100%;
+    max-width: rem(940px);
+    height: rem(348px);
 
-    margin-bottom: 15px;
+    margin-bottom: rem(15px);
 
     background-color: #f8faf9;
 
-    padding: $spacing $spacing $spacing $spacing;
+    padding: $spacing;
     box-sizing: border-box;
 
     &__content {
@@ -35,8 +41,15 @@
         flex-direction: column;
         justify-content: space-around;
 
-        width: 500px;
+        width: rem(500px);
         margin-left: $spacing;
+
+        @media (max-width: 768px) {
+            margin: 0;
+            text-align: center;
+
+            width: 100%;
+        }
     }
 
     &__title {
@@ -48,6 +61,10 @@
     &__text {
         font-size: 16px;
         line-height: 18.51px;
+
+        @media (max-width:768px) {
+            margin: rem(16px) 0 rem(16px) 0;
+        }
     }
 
     &__reviewer {
@@ -69,5 +86,22 @@
         background-color: white;
 
         border-radius: 100px;
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+
+        width: 100%;
+        height: auto;
+
+        padding: rem(56px);
+
+        &__avatar {
+            width: rem(130px);
+            height: rem(130px);
+
+            margin-bottom: rem(25px);
+        }
     }
 }

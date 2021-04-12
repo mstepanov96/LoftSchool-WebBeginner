@@ -1,9 +1,13 @@
 .reviewers {
     display: flex;
     list-style-type: none;
-    padding-inline-start: 0px;
+    padding-inline-start: 0;
 
-    $pictureSize: 74px;
+    $pictureSize: rem(74px);
+
+    @media (max-width: 480px) {
+        $pictureSize: rem(65px);
+    }
 
     &__picture {
         position: relative;
