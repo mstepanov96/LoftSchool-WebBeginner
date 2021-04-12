@@ -127,7 +127,7 @@
                 <div class="order__customer columns__item">
                     <div class="order__identity">
                         <div class="customer-field">
-                            <label for="customer-name" class="customer-field__label">Комментарий</label>
+                            <label for="customer-name" class="customer-field__label">Имя</label>
                             <input type="text" id="customer-name" class="customer-field__input">
                         </div>
                         <div class="customer-field">
@@ -167,18 +167,18 @@
                     <div class="order__payment-type">
                         <div class="selectable">
                             <input type="radio" id="customer-payment-cash" name="payment-type"
-                                class="selectable__input selectable__input">
+                                class="selectable__input">
                             <label for="customer-payment-cash" class="selectable__label">
                                 <div class="selectable__pseudo--radio"></div>
-                                Потребуется сдача
+                                <span class="selectable__title">Потребуется сдача</span>
                             </label>
                         </div>
                         <div class="selectable">
                             <input type="radio" id="customer-payment-card" name="payment-type"
-                                class="selectable__input selectable__input">
+                                class="selectable__input">
                             <label for="customer-payment-card" class="selectable__label">
                                 <div class="selectable__pseudo--radio"></div>
-                                Оплата картой
+                                <span class="selectable__title">Оплата по карте</span>
                             </label>
                         </div>
                     </div>
@@ -187,7 +187,7 @@
                             <input type="checkbox" id="dont-call-back" class="selectable__input">
                             <label for="dont-call-back" class="selectable__label">
                                 <div class="selectable__pseudo selectable__pseudo--checkbox"></div>
-                                Не перезванивать
+                                <span class="selectable__title">Не перезванивать</span>
                             </label>
                         </div>
                     </div>

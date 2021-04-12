@@ -1,47 +1,77 @@
 .order {
-    justify-content: space-evenly;
+    justify-content: center;
     background-color: #222222;
+
+    align-items: center;
 
     &__head-content {
         text-align: center;
-        margin-bottom: 58px;
+        margin-bottom: rem(58px);
 
         font-size: 48px;
-        line-height: 52px;
+        line-height: 1.1em;
 
         text-transform: uppercase;
         color: white;
+
+        @media (max-width:768px) {
+            margin-bottom: rem(16px);
+        }
+
+        @media (max-width: 480px) {
+            font-size: 32px;
+            margin-bottom: rem(31px);
+        }
     }
 
     &__customer {
         display: flex;
         flex-direction: column;
+        margin-right: 27px;
+
+        flex: 0 1 rem(460px);
+
+        @media (max-width: 768px) {
+            flex-basis: auto;
+            margin-right: 0;
+            margin-bottom: rem(16px);
+        }
     }
 
     &__identity {
         display: flex;
-        margin-bottom: 11px;
+        justify-content: stretch;
+
+        margin-bottom: rem(11px);
 
         .customer-field {
-            width: 222px;
+            flex: 1 1 rem(111px);
             margin-right: 16px;
 
             &:last-child {
                 margin-right: 0px;
             }
         }
+
+        @media (max-width: 768px) {
+            margin-bottom: rem(18px);
+        }
     }
 
     &__street.customer-field {
-        width: 460px;
-        margin-bottom: 11px;
+        margin-bottom: rem(11px);
+
+        @media(max-width: 768px) {
+            margin-bottom: rem(15px);
+        }
     }
 
     &__placement {
         display: flex;
+        justify-content: stretch;
 
         .customer-field {
-            width: 106px;
+            flex: 1 1 rem(105px);
             margin-right: 12px;
 
             &:last-child {
@@ -53,14 +83,24 @@
     &__summary {
         display: flex;
         flex-direction: column;
+
+        flex: 0 1 rem(450px);
     }
 
     &__comment.customer-field {
-        width: 450px;
-        margin-bottom: 38px;
+        margin-bottom: rem(38px);
         
         .customer-field__input {
-            height: 152px;
+            padding-top: rem(12px);
+            height: rem(152px);
+
+            @media (max-width: 768px) {
+                height: rem(82px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            margin-bottom: rem(24px);
         }
     }
 
@@ -74,12 +114,28 @@
             &:last-child {
                 margin-right: 0px;
             }
+
+            @media (max-width: 480px) {
+                margin-bottom: 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            justify-content: center;
         }
     }
 
     &__additional {
         display: flex;
-        margin-bottom: 46px;
+        margin-bottom: rem(46px);
+
+        @media (max-width: 768px) {
+            margin-bottom: rem(42px);
+        }
+
+        @media (max-width: 480px) {
+            justify-content: center;
+        }
     }
 
     &__buttons {
@@ -89,10 +145,18 @@
         .big-btn {
             margin-right: 15px;
         }
+
+        @media (max-width: 768px) {
+            justify-content: center;
+        }
     }
 
     &__button-cancel {
         color: white;
+
+        @media (max-width: 480px) {
+            color: $colorRed
+        }
     }
 }
 
@@ -100,38 +164,48 @@
     display: flex;
     justify-content: center;
 
-    &__item {
-        margin-right: 27px;
+    max-width: rem(960px);
+    margin: 2%;
 
-        &:last-child {
-            margin-right: 0px;
-        }
+    @media (max-width: 768px) {
+        flex-direction: column;
+        max-width: rem(466px);
     }
 }
 
 .customer-field {
     display: flex;
     flex-direction: column;
+    align-content: stretch;
+    justify-content: stretch;
 
     &__label {
         color: white;
+        margin-bottom: rem(5px);
     }
 
     &__input {
-        height: 58px;
+        height: rem(58px);
         outline: none;
 
         font-size: 14px;
         line-height: 20px;
 
-        padding-left: 12px;
+        padding-left: rem(12px);
         
         box-sizing: border-box;
         border-radius: 4px;
         border-style: hidden;
 
+
+        width: 100%;
+
         &:focus {
             border: 3px solid $colorRed;
+        }
+
+        @media (max-width: 768px) {
+            height: rem(36px);
         }
     }
 }

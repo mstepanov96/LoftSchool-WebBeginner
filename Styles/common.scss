@@ -15,10 +15,6 @@ section {
 
     box-sizing: border-box;
 
-    &.order {
-        display: none;
-    }
-
     @media (max-width: 768px) {
         min-height: rem(1000px);
     }
@@ -85,6 +81,10 @@ section {
     &__label {
         color: white;
         display: flex;
+    }
+
+    &__title {
+        vertical-align: middle;
     }
 
     &__pseudo {

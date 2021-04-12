@@ -15,9 +15,6 @@ section {
   flex-direction: column;
   box-sizing: border-box;
 }
-section.order {
-  display: none;
-}
 @media (max-width: 768px) {
   section {
     min-height: 62.5rem;
@@ -71,6 +68,9 @@ section.order {
 .selectable__label {
   color: white;
   display: flex;
+}
+.selectable__title {
+  vertical-align: middle;
 }
 .selectable__pseudo--checkbox {
   display: flex;
@@ -285,6 +285,7 @@ section.order {
     justify-content: space-between;
     height: 5.7rem;
     padding: 0 2rem 0 2rem;
+    box-sizing: border-box;
   }
   .header::after {
     display: initial;
@@ -561,41 +562,73 @@ section.order {
 }
 
 .order {
-  justify-content: space-evenly;
+  justify-content: center;
   background-color: #222222;
+  align-items: center;
 }
 .order__head-content {
   text-align: center;
-  margin-bottom: 58px;
+  margin-bottom: 3.625rem;
   font-size: 48px;
-  line-height: 52px;
+  line-height: 1.1em;
   text-transform: uppercase;
   color: white;
+}
+@media (max-width: 768px) {
+  .order__head-content {
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .order__head-content {
+    font-size: 32px;
+    margin-bottom: 1.9375rem;
+  }
 }
 .order__customer {
   display: flex;
   flex-direction: column;
+  margin-right: 27px;
+  flex: 0 1 28.75rem;
+}
+@media (max-width: 768px) {
+  .order__customer {
+    flex-basis: auto;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
 }
 .order__identity {
   display: flex;
-  margin-bottom: 11px;
+  justify-content: stretch;
+  margin-bottom: 0.6875rem;
 }
 .order__identity .customer-field {
-  width: 222px;
+  flex: 1 1 6.9375rem;
   margin-right: 16px;
 }
 .order__identity .customer-field:last-child {
   margin-right: 0px;
 }
+@media (max-width: 768px) {
+  .order__identity {
+    margin-bottom: 1.125rem;
+  }
+}
 .order__street.customer-field {
-  width: 460px;
-  margin-bottom: 11px;
+  margin-bottom: 0.6875rem;
+}
+@media (max-width: 768px) {
+  .order__street.customer-field {
+    margin-bottom: 0.9375rem;
+  }
 }
 .order__placement {
   display: flex;
+  justify-content: stretch;
 }
 .order__placement .customer-field {
-  width: 106px;
+  flex: 1 1 6.5625rem;
   margin-right: 12px;
 }
 .order__placement .customer-field:last-child {
@@ -604,13 +637,24 @@ section.order {
 .order__summary {
   display: flex;
   flex-direction: column;
+  flex: 0 1 28.125rem;
 }
 .order__comment.customer-field {
-  width: 450px;
-  margin-bottom: 38px;
+  margin-bottom: 2.375rem;
 }
 .order__comment.customer-field .customer-field__input {
-  height: 152px;
+  padding-top: 0.75rem;
+  height: 9.5rem;
+}
+@media (max-width: 768px) {
+  .order__comment.customer-field .customer-field__input {
+    height: 5.125rem;
+  }
+}
+@media (max-width: 768px) {
+  .order__comment.customer-field {
+    margin-bottom: 1.5rem;
+  }
 }
 .order__payment-type {
   display: flex;
@@ -622,9 +666,29 @@ section.order {
 .order__payment-type .selectable:last-child {
   margin-right: 0px;
 }
+@media (max-width: 480px) {
+  .order__payment-type .selectable {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 480px) {
+  .order__payment-type {
+    justify-content: center;
+  }
+}
 .order__additional {
   display: flex;
-  margin-bottom: 46px;
+  margin-bottom: 2.875rem;
+}
+@media (max-width: 768px) {
+  .order__additional {
+    margin-bottom: 2.625rem;
+  }
+}
+@media (max-width: 480px) {
+  .order__additional {
+    justify-content: center;
+  }
 }
 .order__buttons {
   display: flex;
@@ -633,38 +697,59 @@ section.order {
 .order__buttons .big-btn {
   margin-right: 15px;
 }
+@media (max-width: 768px) {
+  .order__buttons {
+    justify-content: center;
+  }
+}
 .order__button-cancel {
   color: white;
+}
+@media (max-width: 480px) {
+  .order__button-cancel {
+    color: #e01f3d;
+  }
 }
 
 .columns {
   display: flex;
   justify-content: center;
+  max-width: 60rem;
+  margin: 2%;
 }
-.columns__item {
-  margin-right: 27px;
-}
-.columns__item:last-child {
-  margin-right: 0px;
+@media (max-width: 768px) {
+  .columns {
+    flex-direction: column;
+    max-width: 29.125rem;
+  }
 }
 
 .customer-field {
   display: flex;
   flex-direction: column;
+  align-content: stretch;
+  justify-content: stretch;
 }
 .customer-field__label {
   color: white;
+  margin-bottom: 0.3125rem;
 }
 .customer-field__input {
-  height: 58px;
+  height: 3.625rem;
   outline: none;
   font-size: 14px;
   line-height: 20px;
-  padding-left: 12px;
+  padding-left: 0.75rem;
   box-sizing: border-box;
   border-radius: 4px;
   border-style: hidden;
+  width: 100%;
 }
 .customer-field__input:focus {
   border: 3px solid #e01f3d;
+}
+@media (max-width: 768px) {
+  .customer-field__input {
+    height: 2.25rem;
+  }
 }
