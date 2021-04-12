@@ -10,7 +10,7 @@
         text-transform: uppercase;
 
         z-index: 10;
-        margin-bottom: 32px;
+        margin-bottom: rem(32px);
 
         @media (max-width: 480px) {
             font-size: 32px;
@@ -55,12 +55,12 @@
     &__title {
         font-weight: bold;
         font-size: 24px;
-        line-height: 27.77px;
+        line-height: 1.1em;
     }
 
     &__text {
         font-size: 16px;
-        line-height: 18.51px;
+        line-height: 1.1em;
 
         @media (max-width:768px) {
             margin: rem(16px) 0 rem(16px) 0;
@@ -70,7 +70,7 @@
     &__reviewer {
         font-weight: bold;
         font-size: 18px;
-        line-height: 20.83px;
+        line-height: 1.1em;
     }
 
     &__decorative-half-circle {
@@ -80,8 +80,8 @@
         top: 0%;
         transform: translate(-50%, -70%);
 
-        width: 83px;
-        height: 83px;
+        width: rem(83px);
+        height: rem(83px);
         
         background-color: white;
 

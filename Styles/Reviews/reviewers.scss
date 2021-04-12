@@ -23,16 +23,16 @@
         width: $pictureSize;
         height: $pictureSize;
 
-        margin-right: 6px;
+        margin-right: rem(6px);
 
         border-radius: 100px;
         overflow: hidden;
         position: relative;
 
-        border: 0px solid $colorRed;
+        border: 0 solid $colorRed;
 
         &:last-child {
-            margin-right: 0px;
+            margin-right: 0;
         }
 
         &--selected {
