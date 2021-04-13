@@ -283,7 +283,7 @@ section {
   display: none;
   width: 1.625rem;
   height: 1.5rem;
-  background-image: url("./../Images/SVG/icon-gamburger.svg");
+  background-image: url("./../Images/sprite.svg#icon-gamburger");
 }
 @media (max-width: 768px) {
   .header {
@@ -394,6 +394,7 @@ section {
   align-items: center;
   width: 8rem;
   height: 8rem;
+  flex-shrink: 0;
   margin-bottom: 1.5rem;
   background-color: #f2f5f4;
   border-radius: 200px;
@@ -401,10 +402,8 @@ section {
 }
 @media (max-width: 480px) {
   .reason__icon-container {
-    width: auto;
-    height: auto;
-    padding: 7% 0 7% 0;
-    min-width: 28%;
+    width: 30vw;
+    height: 30vw;
     margin-bottom: 0;
   }
 }
