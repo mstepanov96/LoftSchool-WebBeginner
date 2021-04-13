@@ -17,15 +17,11 @@
         flex-shrink: 0;
     }
 
-    &::after {
-        content: "";
-
+    &__hamburger {
         display: none;
 
         width: rem(26px);
         height: rem(24px);
-
-        background-image: url("./../Images/sprite.svg#icon-gamburger");
     }
 
     @media (max-width: 768px) {
@@ -35,7 +31,7 @@
         padding: 0 2rem 0 2rem;
         box-sizing: border-box;
 
-        &::after {
+        &__hamburger {
             display: initial;
         }
     }
